@@ -31,7 +31,7 @@ def q(sql, params=None):
     return con.execute(sql).df()
 
 # ── Sidebar nav ────────────────────────────────────────────────────────────────
-st.sidebar.title("🏀 NBA Dashboard")
+st.sidebar.title("NBA Dashboard")
 st.sidebar.caption("2024–25 Season · Powered by DuckDB")
 page = st.sidebar.radio(
     "Navigate",
@@ -304,7 +304,7 @@ elif page == "Custom Query":
     )
 
     # Schema reference
-    with st.expander("📋 Schema Reference", expanded=True):
+    with st.expander("Schema Reference", expanded=True):
         st.markdown("""
 | Table | Key Columns |
 |---|---|
