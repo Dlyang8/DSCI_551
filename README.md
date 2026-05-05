@@ -137,15 +137,32 @@ Done!
 
 ## Running the Application
 
-With `nba.duckdb` present in the project directory, start the dashboard:
+1. Clone the repository and navigate into the project folder:
+
+```bash
+git clone https://github.com/your-username/your-repo-name.git
+cd your-repo-name
+```
+
+2. Activate your virtual environment if you have one set up:
+
+```bash
+source venv/bin/activate        # On Windows: venv\Scripts\activate
+```
+
+3. Open your terminal (Mac/Linux) or Command Prompt / PowerShell (Windows), make sure you are inside the project folder where `app.py` is located, and run:
 
 ```bash
 streamlit run app.py
 ```
 
-The application will open in your browser at `http://localhost:8501`.
+4. Streamlit will start a local server and automatically open the dashboard in your default browser. If it does not open automatically, copy the URL printed in the terminal and paste it into your browser. It will look like this:
 
-The app connects to `nba.duckdb` in read-only mode. No internet connection is required to run the dashboard once the database is built.
+```
+Local URL: http://localhost:8501
+```
+
+The app connects to `nba.duckdb` in read-only mode. No internet connection is required once the database file is present in the project folder. Make sure you are running the command from the same directory that contains both `app.py` and `nba.duckdb`, otherwise the app will not find the database.
 
 ---
 
