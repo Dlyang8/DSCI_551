@@ -1,6 +1,6 @@
 # NBA Analytics Dashboard
 
-An interactive analytics dashboard for the 2024-25 NBA season built with DuckDB and Streamlit. The application allows users to explore player game logs, compare players head-to-head, track team monthly trends, view statistical leaderboards, and run custom SQL queries — all powered by DuckDB's columnar query engine.
+An interactive analytics dashboard for the 2024-25 NBA season built with DuckDB and Streamlit. The application allows users to explore player game logs, compare players head-to-head, track team monthly trends, view statistical leaderboards, and run custom SQL queries, all powered by DuckDB's columnar query engine.
 
 ---
 
