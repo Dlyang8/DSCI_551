@@ -76,7 +76,11 @@ Package purposes:
 
 ## Data Pipeline
 
-The data pipeline has two steps: fetching raw data and loading it into the database. If the `nba.duckdb` file and `data/` CSVs are already included in this repository, you can skip to [Database Setup](#database-setup).
+The `data/` folder and `nba.duckdb` are already included in this repository. You do not need to run the fetch notebook or the database setup script to use the application. Simply clone the repository and run `streamlit run app.py` as described in [Running the Application](#running-the-application).
+
+The steps below are provided for reference if you want to understand or reproduce the full pipeline from scratch.
+
+The data pipeline has two steps: fetching raw data and loading it into the database.
 
 ### Step 1 — Fetch NBA Data
 
