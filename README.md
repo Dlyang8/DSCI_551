@@ -210,7 +210,7 @@ To fully reproduce this project from scratch:
 4. Run `setup_db.py` to rebuild `nba.duckdb` from the CSV files.
 5. Run `streamlit run app.py` to launch the dashboard.
 
-If the `data/` CSVs and `nba.duckdb` are already included in the repository, steps 3 and 4 can be skipped. Run `setup_db.py` only if you want to rebuild the database from the CSV files.
+The `data/` CSVs and `nba.duckdb` are already included in the repository, steps 3 and 4 can be skipped. Run `setup_db.py` only if you want to rebuild the database from the CSV files.
 
 ---
 
