@@ -140,7 +140,7 @@ Done!
 1. Clone the repository and navigate into the project folder:
 
 ```bash
-git clone https://github.com/your-username/your-repo-name.git
+git clone https://github.com/Dlyang8/DSCI_551.git
 cd your-repo-name
 ```
 
