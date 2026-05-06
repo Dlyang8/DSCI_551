@@ -48,21 +48,42 @@ This project fetches 2024-25 NBA player box score data using the `nba_api` libra
 - Python 3.9 or higher
 - Jupyter Notebook or JupyterLab (for running `fetch_data.ipynb`)
 
-It is recommended to use a virtual environment:
+**Installing Python (if not already installed):**
+
+Go to https://www.python.org/downloads/ and click the Download Python button.
+
+On Windows, when running the installer, make sure to check the box that says **"Add Python to PATH"** before clicking Install Now. This step is required or terminal commands like `python` will not be recognized. After installation, close and reopen your terminal.
+
+On Mac, the installer will run as a standard application. Once it finishes, close and reopen your terminal. If the `python` command is not recognized, try `python3` instead, as Mac systems often require this:
 
 ```bash
-python -m venv venv
-source venv/bin/activate        # On Windows: venv\Scripts\activate
+python3 --version
 ```
+
+If that works, use `python3` and `python3 -m pip` in place of `python` and `python -m pip` for all commands in this guide.
+
+To verify Python is installed correctly on Windows:
+
+```bash
+python --version
+```
+
+You should see something like `Python 3.13.x`.
 
 ---
 
 ## Installing Dependencies
 
-Install all required packages:
+Install all required packages. On Windows use `python -m pip`, and on Mac use `python3 -m pip` if `python` is not recognized:
 
+Windows:
 ```bash
-pip install streamlit duckdb pandas nba_api notebook
+python -m pip install streamlit duckdb pandas nba_api notebook
+```
+
+Mac:
+```bash
+python3 -m pip install streamlit duckdb pandas nba_api notebook
 ```
 
 Package purposes:
@@ -137,23 +158,36 @@ Done!
 
 ## Running the Application
 
-1. Clone the repository and navigate into the project folder:
+1. Download the repository from GitHub as a ZIP file and extract it, or clone it using git:
 
 ```bash
 git clone https://github.com/Dlyang8/DSCI_551.git
-cd DSCI_551
 ```
 
-2. Activate your virtual environment if you have one set up:
+2. Open your terminal (Mac) or Command Prompt / PowerShell (Windows) and navigate into the project folder. When downloaded from GitHub as a ZIP, the folder will be named `DSCI_551-main`:
 
+Windows:
 ```bash
-source venv/bin/activate        # On Windows: venv\Scripts\activate
+cd Desktop\DSCI_551-main
 ```
 
-3. Open your terminal (Mac/Linux) or Command Prompt / PowerShell (Windows), make sure you are inside the project folder where `app.py` is located, and run:
-
+Mac:
 ```bash
-streamlit run app.py
+cd ~/Desktop/DSCI_551-main
+```
+
+Adjust the path to wherever you extracted the folder on your machine.
+
+3. Run the application. On Windows use `python -m streamlit`, and on Mac use `python3 -m streamlit` if `streamlit` is not recognized directly:
+
+Windows:
+```bash
+python -m streamlit run app.py
+```
+
+Mac:
+```bash
+python3 -m streamlit run app.py
 ```
 
 4. Streamlit will start a local server and automatically open the dashboard in your default browser. If it does not open automatically, copy the URL printed in the terminal and paste it into your browser. It will look like this:
