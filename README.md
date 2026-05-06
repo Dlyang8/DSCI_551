@@ -1,6 +1,6 @@
 # NBA Analytics Dashboard
 
-An interactive analytics dashboard for the 2024-25 NBA season built with DuckDB and Streamlit. The application allows users to explore player game logs, compare players head-to-head, track team monthly trends, view statistical leaderboards, and run custom SQL queries, all powered by DuckDB's columnar query engine.
+An interactive analytics dashboard for the 2024-25 NBA season built with DuckDB and Streamlit. The application allows users to explore player game logs, compare players head-to-head, track team monthly trends, view statistical leaderboards, and run custom SQL queries — all powered by DuckDB's columnar query engine.
 
 ---
 
@@ -90,7 +90,7 @@ Open and run `fetch_data.ipynb` in Jupyter:
 jupyter notebook fetch_data.ipynb
 ```
 
-Run all four cells in order:
+Run all five cells in order:
 
 1. **Cell 1** — Loads libraries and creates the `data/` directory.
 2. **Cell 2** — Fetches all 2024-25 game records for Regular Season and Playoffs using `LeagueGameLog`.
@@ -140,7 +140,7 @@ Done!
 1. Clone the repository and navigate into the project folder:
 
 ```bash
-git clone https://github.com/Dlyang8/DSCI_551.git
+git clone https://github.com/your-username/your-repo-name.git
 cd your-repo-name
 ```
 
@@ -176,7 +176,7 @@ To fully reproduce this project from scratch:
 4. Run `setup_db.py` to rebuild `nba.duckdb` from the CSV files.
 5. Run `streamlit run app.py` to launch the dashboard.
 
-The `data/` CSVs and `nba.duckdb` are already included in the repository, steps 3 and 4 can be skipped. Run `setup_db.py` only if you want to rebuild the database from the CSV files.
+If the `data/` CSVs and `nba.duckdb` are already included in the repository, steps 3 and 4 can be skipped. Run `setup_db.py` only if you want to rebuild the database from the CSV files.
 
 ---
 
